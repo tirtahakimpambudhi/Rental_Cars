@@ -1,0 +1,528 @@
+[2023-10-03 05:42:47.774 PM] error: 	unhandledRejection: messages is not defined
+ReferenceError: messages is not defined
+    at create_cars (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\cars.controller.js:29:17)
+    at Layer.handle [as handle_request] (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:513:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+[2023-10-03 05:43:25.751 PM] error: 	unhandledRejection: err is not defined
+ReferenceError: err is not defined
+    at create_cars (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\cars.controller.js:29:33)
+    at Layer.handle [as handle_request] (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:513:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+[2023-10-03 06:01:14.854 PM] error: 	unhandledRejection: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:393:5)
+    at ServerResponse.setHeader (node:_http_outgoing:644:11)
+    at ServerResponse.header (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.location (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\response.js:915:15)
+    at ServerResponse.redirect (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\response.js:953:18)
+    at register (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\seller.controller.js:25:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-10-03 06:15:57.912 PM] error: 	unhandledRejection: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:393:5)
+    at ServerResponse.setHeader (node:_http_outgoing:644:11)
+    at ServerResponse.header (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.location (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\response.js:915:15)
+    at ServerResponse.redirect (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\response.js:953:18)
+    at register (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\seller.controller.js:25:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-10-03 06:24:30.406 PM] error: 	uncaughtException: Unexpected token 'throw'
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\validations\validations.js:9
+       const error = throw new Response_Error(400,result.error.message)
+                     ^^^^^
+
+SyntaxError: Unexpected token 'throw'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\services\seller.services.js:3:21)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 07:25:36.873 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:25:39.850 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:25:43.171 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:25:46.245 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:25:49.404 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:25:52.912 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:25:56.297 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:25:59.390 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:02.919 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:06.104 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:09.211 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:13.194 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:18.818 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:22.086 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:25.671 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:29.278 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:32.571 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:35.718 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:26:39.738 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1469:16)
+    at listenInCluster (node:net:1517:12)
+    at Server.listen (node:net:1605:7)
+    at Function.listen (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+[2023-10-03 07:36:29.944 PM] error: 	uncaughtException: Unexpected token '('
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.dashboard.pages.controller.js:22
+            res.(code).render("seller/dashboard/dashboard.ejs",{layout :"seller/dashboard/Partials/main.ejs",result,data,title:"Dashboard"})
+                ^
+
+SyntaxError: Unexpected token '('
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\routes\seller.routes.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 10:49:12.382 PM] error: 	uncaughtException: Identifier 'result' has already been declared
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\services\pages\seller.page.service.js:172
+      const result
+            ^
+
+SyntaxError: Identifier 'result' has already been declared
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 10:52:41.030 PM] error: 	uncaughtException: missing ) after argument list
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\services\pages\seller.page.service.js:172
+      const result_paging = await this.Cars.findAll({where : {sellerId : id_params}},limit : envConfig.data_per_page,off)
+                                                                                     ^^^^^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 10:52:49.645 PM] error: 	uncaughtException: missing ) after argument list
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\services\pages\seller.page.service.js:172
+      const result_paging = await this.Cars.findAll({where : {sellerId : id_params}},limit : envConfig.data_per_page,offset)
+                                                                                     ^^^^^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 10:52:55.858 PM] error: 	uncaughtException: missing ) after argument list
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\services\pages\seller.page.service.js:172
+      const result_paging = await this.Cars.findAll({where : {sellerId : id_params}},limit : envConfig.data_per_page,offset)
+                                                                                     ^^^^^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 10:53:02.653 PM] error: 	uncaughtException: missing ) after argument list
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\services\pages\seller.page.service.js:172
+      const result_paging = await this.Cars.findAll({where : {sellerId : id_params}},limit : envConfig.data_per_page,offset)
+                                                                                     ^^^^^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 10:53:25.983 PM] error: 	uncaughtException: missing ) after argument list
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\services\pages\seller.page.service.js:172
+      const result_paging = await this.Cars.findAll({where : {sellerId : id_params}},limit : envConfig.data_per_page,offset)
+                                                                                     ^^^^^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2023-10-03 10:54:59.747 PM] error: 	uncaughtException: Missing initializer in const declaration
+D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\controllers\pages\seller.dashboard.pages.controller.js:33
+            const page
+                  ^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\Tirta Hakim Pambudhi\Tirta Hakim P XI SIJA 2\NodeJs\Clean Code Projects\Projects\src\routes\seller.routes.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+[2024-02-08 04:59:39.929 PM] error: 	uncaughtException: Unexpected identifier 'result'
+/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/controllers/pages/seller.dashboard.pages.controller.js:86
+            const result = await service.profile_page(id_params)
+                  ^^^^^^
+
+SyntaxError: Unexpected identifier 'result'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1290:20)
+    at Module._compile (node:internal/modules/cjs/loader:1342:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Module.require (node:internal/modules/cjs/loader:1237:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/routes/seller.routes.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+[2024-02-08 06:04:50.099 PM] error: 	uncaughtException: Unexpected token ')'
+/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/services/pages/seller.page.service.js:67
+            logger_console.info(pagingResult[0].)
+                                                ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1290:20)
+    at Module._compile (node:internal/modules/cjs/loader:1342:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Module.require (node:internal/modules/cjs/loader:1237:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/controllers/pages/seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+[2024-02-08 06:43:12.022 PM] error: 	uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1893:16)
+    at listenInCluster (node:net:1941:12)
+    at Server.listen (node:net:2029:7)
+    at Function.listen (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/index.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:142:12)
+[2024-02-08 08:42:15.361 PM] error: 	uncaughtException: Unexpected identifier 'result'
+/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/controllers/pages/seller.dashboard.pages.controller.js:103
+            const result = await service.profile_page(id_params)
+                  ^^^^^^
+
+SyntaxError: Unexpected identifier 'result'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1290:20)
+    at Module._compile (node:internal/modules/cjs/loader:1342:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Module.require (node:internal/modules/cjs/loader:1237:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/routes/seller.routes.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+[2024-02-08 08:49:29.819 PM] error: 	uncaughtException: id is not defined
+ReferenceError: id is not defined
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/models/db/db.cars.models.js:74:9)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Module.require (node:internal/modules/cjs/loader:1237:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/models/models.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+[2024-02-08 08:49:41.421 PM] error: 	uncaughtException: id is not defined
+ReferenceError: id is not defined
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/models/db/db.cars.models.js:74:9)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Module.require (node:internal/modules/cjs/loader:1237:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/models/models.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+[2024-02-08 08:52:14.661 PM] error: 	uncaughtException: Unexpected token '}'
+/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/services/pages/seller.page.service.js:56
+        } catch (error) {
+        ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1290:20)
+    at Module._compile (node:internal/modules/cjs/loader:1342:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Module.require (node:internal/modules/cjs/loader:1237:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/controllers/pages/seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+[2024-02-08 08:53:37.610 PM] error: 	uncaughtException: Unexpected token 'throw'
+/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/services/pages/seller.page.service.js:55
+          return (carsExist !=  null || carsExist != undefined) ?carsExist :throw new errorResponse(404, "Seller Not Found");
+                                                                            ^^^^^
+
+SyntaxError: Unexpected token 'throw'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1290:20)
+    at Module._compile (node:internal/modules/cjs/loader:1342:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+    at Module.load (node:internal/modules/cjs/loader:1212:32)
+    at Module._load (node:internal/modules/cjs/loader:1028:12)
+    at Module.require (node:internal/modules/cjs/loader:1237:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/src/controllers/pages/seller.pages.controller.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)

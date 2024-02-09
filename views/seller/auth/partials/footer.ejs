@@ -1,0 +1,42 @@
+
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+
+  <script src="/Kelompok_3/vendor/libs/jquery/jquery.js"></script>
+  <script src="/Kelompok_3/vendor/libs/popper/popper.js"></script>
+  <script src="/Kelompok_3/vendor/js/bootstrap.js"></script>
+  <script src="/Kelompok_3/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="/Kelompok_3/vendor/js/menu.js"></script>
+
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+
+  <!-- Main JS -->
+  <script src="/Kelompok_3/js/main.js"></script>
+
+  <!-- Page JS -->
+  <% if (typeof errors !== 'undefined' && errors.length > 0) { %>
+    
+		<% errors.forEach(function(e) { %>
+      <!-- Toast -->
+      <script>
+        Swal.fire({
+      title: 'Error!',
+      text:`Error <%= e.code %> : <%- e.msg %>`,
+      icon: 'error',
+      confirmButtonText: 'OK'
+    })
+      </script>
+        <!-- Toast -->
+<% }); %>
+    <% } %>
+  <!-- Page JS -->
+    <%  %>
+  <script src="/Kelompok_3/js/ui-toasts.js"></script>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

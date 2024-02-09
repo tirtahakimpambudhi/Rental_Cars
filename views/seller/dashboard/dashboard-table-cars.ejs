@@ -1,0 +1,72 @@
+
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+
+        <div class="table-responsive text-nowrap">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Merk</th>
+                      <th>Model</th>
+                      <th>Price</th>
+                      <th>Status Rental</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% data.paging.result_paging.forEach(car => { %>
+                        <tr>
+                            <td>
+                              <span class="fw-medium"><%= car.merk %></span>
+                            </td>
+                            <td><%= car.modelCars %></td>
+                            <td>
+                                <%= car.pricePerDay %>
+                            </td>
+                            <td><span class="badge bg-label-primary me-1"><%= car.statusRental %></span></td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  type="button"
+                                  class="btn p-0 dropdown-toggle hide-arrow"
+                                  data-bs-toggle="dropdown">
+                                  <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" id="editCars" href="/Kelompok_3/seller/dashboard/edit-cars/<%= car.sellerId%>/<%= car.id %>"
+                                    ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                                  >
+                                  <button class="dropdown-item" id="deleteCars" data-url="/Kelompok_3//seller/dashboard/delete-cars/<%= car.sellerId%>/<%= car.id %>"
+                                    ><i class="bx bx-trash me-1"></i> Delete</button
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                    <% }) %>
+                  </tbody>
+                </table>
+          </div>
+
+          <div class="col-lg-6 ">
+            <div class="demo-inline-spacing">
+              <!-- Basic Pagination -->
+              <nav aria-label="Page navigation">
+                <ul class="pagination pagination justify-content-end">
+                  <% const pages = data.paging.totalPage %>
+                  <% for( let index = 0; index < pages; index++ ) { %>
+                    <li class="page-item">
+                      <a class="page-link" href="?p=<%= index + 1 %>"><i class="tf-icon"></i><%= index + 1 %></a>
+                    </li>
+                  <% } %>
+                </ul>
+
+              </nav>
+              <!--/ Basic Pagination -->
+            </div>
+          </div>
+    </div>
+</div>
+
+<script src="/Kelompok_3/js/delete-cars.js"></script>
+

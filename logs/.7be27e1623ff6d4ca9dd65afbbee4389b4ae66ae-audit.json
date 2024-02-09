@@ -1,0 +1,60 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 15
+    },
+    "auditLog": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\.7be27e1623ff6d4ca9dd65afbbee4389b4ae66ae-audit.json",
+    "files": [
+        {
+            "date": 1695491946680,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-09-24.log",
+            "hash": "1cad0c088b7d304e27f806cfd80ec089ea4237a0822249c43dbdc52c3f053104"
+        },
+        {
+            "date": 1695574898579,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-09-25.log",
+            "hash": "1d2516a8425b4b92a9b510dc1df8e4e2d2fe648f2ad0576861e1782d27c51f87"
+        },
+        {
+            "date": 1695739728241,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-09-26.log",
+            "hash": "e0320c594b44e5cfd57a789e4211dbbe83ba9a18a3e420570149d40b0a660e3d"
+        },
+        {
+            "date": 1695827190476,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-09-27.log",
+            "hash": "f6e9430ed23fb369d319b75d105bf8a058009336775615b06d0f23182e0bd707"
+        },
+        {
+            "date": 1695834125048,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-09-28.log",
+            "hash": "3f32fe901c4fe1710e2ac5ab68977450794c126a43e26df9e4bbe5b7e119a824"
+        },
+        {
+            "date": 1695920955064,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-09-29.log",
+            "hash": "9bf0231d285551a8b9a92feae5bdb9e2d5a3ecd40450367a283801809e6a9b92"
+        },
+        {
+            "date": 1696024348747,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-09-30.log",
+            "hash": "521a8b0e82df6a752e46d10bb41c805e995bbadad047a66b84c74101fe2da767"
+        },
+        {
+            "date": 1696125076919,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-10-01.log",
+            "hash": "76b78b07824ea3335d01c54092059314a98e1b0a0dbe1b7dd22aed27a7544a52"
+        },
+        {
+            "date": 1696225683586,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-10-02.log",
+            "hash": "08af52a196643df6067a7783d71789143906e2e07950d42a04b76d78562485ab"
+        },
+        {
+            "date": 1696297313250,
+            "name": "D:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-10-03.log",
+            "hash": "0cf3b44cda1963f850f5aac9340adcbd5b4e032c605577f80d56bed619bb4e3f"
+        }
+    ],
+    "hashType": "sha256"
+}

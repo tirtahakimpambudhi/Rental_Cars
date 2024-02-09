@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 15
+    },
+    "auditLog": "/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/logs/.3265c37d6a419c5d874a174e95436d32136a2a2b-audit.json",
+    "files": [
+        {
+            "date": 1707405063480,
+            "name": "/media/tirtahakim/HDD External1/Tirta Hakim Pambudhi/Tirta Hakim P XI SIJA 2/NodeJs/Clean Code Projects/Otw Putty/logs/debug-2024-02-08.log",
+            "hash": "29c50c71c5179af0d80543fc69849aa7f80a9cf8be3971a277956adb4b231f44"
+        }
+    ],
+    "hashType": "sha256"
+}

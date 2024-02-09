@@ -1,0 +1,142 @@
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
+
+      <!-- Layout container -->
+      <div class="layout-page">
+        <!-- Navbar -->
+
+
+
+        <!-- / Navbar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <!-- Layout Demo -->
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div>
+                      <canvas id="myChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ Layout Demo -->
+          </div>
+          <!-- / Content -->
+
+          <!-- Footer -->
+
+          <!-- / Footer -->
+
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+  </div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@cubejs-client/core@0.28.25/"></script>
+
+
+<script>
+
+
+  (async function() {
+    function groupAndSumByYear(data) {
+  const groupedData = {};
+
+  data.forEach(item => {
+    const { year, count } = item;
+    if (!groupedData[year]) {
+      groupedData[year] = 0;
+    }
+    groupedData[year] += count;
+  });
+
+  const result = Object.keys(groupedData).map(year => ({
+    year: parseInt(year),
+    count: groupedData[year],
+  }));
+
+  return result;
+}
+  const raw_data = [
+  { year: 2010, count: 10 },
+    { year: 2011, count: 20 },
+    { year: 2012, count: 15 },
+    { year: 2013, count: 25 },
+    { year: 2014, count: 22 },
+    { year: 2015, count: 30 },
+    { year: 2016, count: 28 },
+    { year: 2010, count: 10 },
+    { year: 2011, count: 20 },
+    { year: 2012, count: 15 },
+    { year: 2013, count: 25 },
+    { year: 2014, count: 22 },
+    { year: 2015, count: 30 },
+    { year: 2016, count: 28 },
+    { year: 2010, count: 10 },
+    { year: 2011, count: 20 },
+    { year: 2012, count: 15 },
+    { year: 2013, count: 25 },
+    { year: 2014, count: 22 },
+    { year: 2015, count: 30 },
+    { year: 2016, count: 28 },
+  ];
+  const data = groupAndSumByYear(raw_data)
+  const bar = {
+      type: 'bar',
+      data: {
+        labels: data.map(row => row.year),
+        datasets: [
+          {
+            label: 'Acquisitions by year',
+            data: data.map(row => row.count),
+            borderColor: '#36A2EB',
+            backgroundColor: '#9BD0F5',
+          },
+          {
+            label: 'Acquisitions by year',
+            data: data.map(row => row.count),
+            borderColor: '#36A2EB',
+            backgroundColor: '#9BD0F5',
+          }
+        ]
+      }
+    }
+  const line = {
+  type: 'line',
+  data: {
+        labels: data.map(row => row.year),
+        datasets: [
+          {
+            label: 'Acquisitions by year',
+            data: data.map(row => row.count),
+            borderColor: '#36A2EB',
+            backgroundColor: '#9BD0F5',
+          }
+        ]
+      }
+}
+
+
+  new Chart(
+    document.getElementById('myChart'),bar
+  );
+})();
+</script>

@@ -1,0 +1,140 @@
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body" id="content">
+                        <div class="row">
+                            <div class="col">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <div class="col">
+                                <canvas id="myChart2"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<% if (data.cars.length !== 0 ) { %>
+    <div class="content-wrapper">
+        <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <h5 class="card-header">Data Cars</h5>
+                                <div class="table-responsive text-nowrap">
+                                  <table class="table table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th>Merk</th>
+                                        <th>Tipe</th>
+                                        <th>Model Cars</th>
+                                        <th>Price Per Day</th>
+                                        <th>Action</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="table-border-bottom-0">
+                                        <% data.paging.result_paging.forEach(car => { %>
+                                            <tr>
+                                                <td>
+                                                    <span class="fw-medium"><%= car.merk %></span>
+                                                  </td>
+                                                  <td><%= car.tipe %></td>
+                                                  <td><%= car.modelCars %></td>
+                                                  <!-- Production Year -->
+                                                  <td>$<%= car.pricePerDay %>.00</td>
+                                                  <td>
+                                                    
+                                              <div class="dropdown">
+                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i class="bx bx-dots-vertical-rounded"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="/Kelompok_3/seller/details-cars/<%= car.sellerId%>/<%= car.id %>"><i class='bx bx-info-circle'></i> Details</a>
+                                                </div>
+                                              </div>
+                                                  </td>
+                                            </tr>
+                                        <% }) %>
+                                    </tbody>
+                                  </table>
+                                  <div class="col-lg-6 ">
+                                    <div class="demo-inline-spacing">
+                                      <!-- Basic Pagination -->
+                                      <nav aria-label="Page navigation">
+                                        <ul class="pagination pagination justify-content-end">
+                                          <% const pages = data.paging.totalPage %>
+                                          <% for( let index = 0; index < pages; index++ ) { %>
+                                            <li class="page-item">
+                                              <a class="page-link" href="?p=<%= index + 1 %>"><i class="tf-icon"></i><%= index + 1 %></a>
+                                            </li>
+                                          <% } %>
+                                        </ul>
+
+                                      </nav>
+                                      <!--/ Basic Pagination -->
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script src="/Kelompok_3/js/utils-data-cars.js"></script>
+    <script>
+
+        const data_paging_raw = `<%- JSON.stringify(data.paging)%>`
+        const data_paging  = JSON.parse(data_paging_raw)
+        console.log(data_paging)
+        const data_cars_raw = `<%- JSON.stringify(data.cars) %>`;
+        const data_cars = JSON.parse(data_cars_raw);
+        const groupByModels = filterAndCountByModelCars(data_cars);
+        const groupByCreate = filterBycreated(data_cars);
+        const groupByMerk = filterByMerk(data_cars)
+
+          
+    </script>
+    <script src="/Kelompok_3/js/data-chart.js"></script>
+<% } else {%>
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-primary">Your Data is Empty , <%= result.name %>! 🎉</h5>
+                          <p class="mb-4">
+                            Start your business by managing your client data, and adding cars for rental
+                          </p>
+        
+                          <a href="/Kelompok_3/seller/dashboard/add-cars/<%= result.id %>" class="btn btn-sm btn-outline-primary">Start</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 text-center text-sm-left">
+                        <div class="card-body pb-0 px-0 px-md-4">
+                          <img src="/Kelompok_3/img/illustrations/man.png" height="140" alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png" data-app-light-img="illustrations/man-with-laptop-light.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

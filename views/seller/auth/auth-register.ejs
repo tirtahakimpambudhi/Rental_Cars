@@ -1,0 +1,202 @@
+
+ <!-- Content -->
+    <div class="content-wrapper">
+      <!-- Content -->
+
+      <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+          <!-- Basic with Icons -->
+          <div class="col-xxl">
+            <div class="card mb-4">
+              <div class="card-header d-flex align-items-center justify-content-between">
+                <h5 class="mb-0"><%= title %></h5>
+                <small class="text-muted float-end">Adventure starts here 🚀
+                  Make your app management easy and fun!</small>
+                
+              </div>
+              <div class="card-body">
+                <form class="mb-3" action="/Kelompok_3/seller" method="POST">
+                  <div class="row mb-3">
+                    <label class="col-sm-2 form-label" for="basic-icon-default-phone">No Rekening</label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span id="basic-icon-default-phone2" class="input-group-text"
+                          ><i class="fa-regular fa-credit-card"></i></span>
+                        <input
+                          type="text"
+                          id="basic-icon-default-phone"
+                          class="form-control phone-mask"
+                          placeholder="6587-7999-8XXX"
+                          aria-label="6587-7999-8XXX"
+                          name="noRekening"
+                          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                          aria-describedby="basic-icon-default-phone2"
+                          required
+                          />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Name</label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span id="basic-icon-default-fullname2" class="input-group-text"
+                          ><i class="bx bx-user"></i
+                        ></span>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="basic-icon-default-fullname"
+                          placeholder="John Doe"
+                          aria-label="John Doe"
+                          aria-describedby="basic-icon-default-fullname2"
+                          required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span id="basic-icon-default-company2" class="input-group-text"
+                          ><i class="bx bx-buildings"></i
+                        ></span>
+                        <input
+                          type="text"
+                          id="basic-icon-default-company"
+                          class="form-control"
+                          placeholder="ACME Inc."
+                          aria-label="ACME Inc."
+                          name="nameCompany"
+                          aria-describedby="basic-icon-default-company2"
+                          required
+                           />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                        <input
+                          type="text"
+                          id="basic-icon-default-email"
+                          class="form-control"
+                          name="email"
+                          placeholder="john.doe"
+                          aria-label="john.doe"
+                          aria-describedby="basic-icon-default-email2"
+                          required
+                           />
+                        <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Password</label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></i></span>
+                        <input
+                          type="password"
+                          id="basic-icon-default-email"
+                          class="form-control"
+                          name="password"
+                          placeholder="**********"
+                          aria-label="**********"
+                          aria-describedby="basic-icon-default-password"
+                          required
+                          />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone No</label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span id="basic-icon-default-phone2" class="input-group-text"
+                          ><i class="bx bx-phone"></i
+                        ></span>
+                        <input
+                          type="text"
+                          id="basic-icon-default-phone"
+                          class="form-control phone-mask"
+                          placeholder="658 799 8941"
+                          aria-label="658 799 8941"
+                          name="noTelp"
+                          pattern="[0-9]{3} [0-9]{4} [0-9]{4}"
+                          aria-describedby="basic-icon-default-phone2"
+                          required
+                           />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-2 form-label" for="basic-icon-default-message">Address</label>
+                    <div class="col-sm-10">
+                      <div class="input-group input-group-merge">
+                        <span id="basic-icon-default-message2" class="input-group-text"
+                          ><i class="fa-regular fa-map"></i></span>
+                        <input
+                        type="text"
+                          id="basic-icon-default-message"
+                          class="form-control"
+                          name="address"
+                          required
+                          placeholder="ATTN: Dennis Menees, CEO Global Co. 90210 Broadway Blvd.Nashville,"
+                          aria-label="ATTN: Dennis Menees, CEO
+Global Co.
+90210 Broadway Blvd.
+Nashville,"
+                          aria-describedby="basic-icon-default-address"></input>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col">
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="terms-conditions"  />
+                          <label class="form-check-label" for="terms-conditions">
+                            I agree to
+                            <a href="javascript:void(0);">privacy policy & terms</a>
+                          </label>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <button class="btn btn-primary d-grid">Sign up</button>
+                  </div>
+                  </div>
+                  <div class="row">
+                    <p >
+                      <span>Already have an account?</span>
+                      <a href="seller/login">
+                        <span>Sign in instead</span>
+                      </a>
+                    </p>
+                  </div>
+                </form>
+  
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+
+        <!-- Basic Layout & Basic with Icons -->
+
+      <!-- / Content -->
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="py-3 mb-4"><span class="text-muted fw-light">Profile Account </span> </h4>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" href=""><i class="bx bx-user me-1"></i> Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/Kelompok_3/seller/dashboard/settings/<%= result.id %>"
+                        ><i class='bx bx-cog me-1' ></i>Settings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="card mb-4">
+                    <h5 class="card-header">Profile Details</h5>
+                    <!-- Account -->
+                    <div class="card-body">
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img
+                          src="/Kelompok_3/img/avatars/1.png"
+                          alt="user-avatar"
+                          class="d-block rounded"
+                          height="100"
+                          width="100"
+                          id="uploadedAvatar" />
+                      </div>
+                    </div>
+                    <hr class="my-0" />
+                    <div class="card-body">
+
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="firstName" class="form-label">Full Name</label>
+                            <input
+                              readonly
+                              class="form-control"
+                              type="text"
+                              id="firstName"
+                              value="<%= result.name%>"
+                              autofocus />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input
+                              class="form-control"
+                              readonly
+                              id="email"
+                              value="<%= result.email%>"/>
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="organization" class="form-label">Company</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="organization"
+                              readonly
+                              value="<%= result.nameCompany%>" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                            <div class="input-group input-group-merge">
+                              <input
+                                type="text"
+                                id="phoneNumber"
+                                readonly
+                                class="form-control"
+                                value="<%= result.noTelp%>" />
+                            </div>
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" readonly value="<%= result.address%>" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="state" class="form-label">No Rekening</label>
+                            <input class="form-control" type="text" id="state" readonly value="<%=result.noRekening %>" />
+                          </div>
+                        </div>
+
+                    </div>
+                    <!-- /Account -->
+                  </div>
+                </div>
+                <div class="card">
+ 
+                  <div class="card-body">
+                    <h5>Account Created At <%= result.createdAt %></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+            
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->

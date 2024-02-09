@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 15
+    },
+    "auditLog": "G:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\.f20581a9136391e76bb25d613eb79cf38358f116-audit.json",
+    "files": [
+        {
+            "date": 1696376173955,
+            "name": "G:\\Tirta Hakim Pambudhi\\Tirta Hakim P XI SIJA 2\\NodeJs\\Clean Code Projects\\Projects\\logs\\debug-2023-10-04.log",
+            "hash": "8f63a2f685018957be066ed27498e7980a2c9905cd6f41367a3fd572cd2b3575"
+        }
+    ],
+    "hashType": "sha256"
+}
